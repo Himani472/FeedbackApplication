@@ -1,0 +1,54 @@
+<!-- Default form register -->
+<body >
+<form  [formGroup]="userprofile" class="text-center border border-light p-5" (ngSubmit)="onSubmit()">
+
+    <p class="h4 mb-4">Sign up</p>
+
+    <div class="form-row mb-4">
+      <div class="col">
+        <!-- First name -->
+        
+        <input type="text" id="firstName" class="form-control" placeholder="First name" FormControlName="firstName" >
+      </div>
+      
+<div
+class="alert alert-danger">
+      <div *ngIf="userprofileu.get(serprofile.get('firstName').errors.required">
+        Name is required.
+      </div>
+</div>
+    <div class="col">
+        
+        <!-- Last name -->
+        <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name" FormControlName="LastName" >
+      </div>
+    </div>
+
+    <!-- E-mail -->
+    <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail" FormControlName="Email">
+
+    <!-- Password -->
+    <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock" FormControlName="Password">
+    <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+      At least 8 characters and 1 digit
+    </small>
+
+    <!-- Phone number -->
+    <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock"FormControlName="Number">
+    <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
+      Optional - for two-step authentication
+    </small>
+<button> Submit </button>
+    
+
+
+    <hr>
+
+    <!-- Terms of service -->
+    <p>By clicking
+      <em>Sign up</em> you agree to our
+      <a href="" target="_blank">terms of service</a></p>
+
+  </form>
+</body>
+  <!-- Default form register -->
