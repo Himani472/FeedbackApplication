@@ -1,1 +1,59 @@
-<p>hr-component works!</p>
+<body>
+    <div style="padding: 40px 200px">
+        <div class="col" style="padding: 10px 150px;">
+            <!--Card-->
+            <mdb-card cascade="true">
+    
+                <!--Card image-->
+                <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+                    <a>
+                        <div class="mask rgba-white-slight"></div>
+                    </a>
+                </div>
+                <!--/Card image-->
+    
+                <mdb-card-body cascade="true" class="text-center">
+     <mdb-card-text>
+  <!-- Section: form gradient -->
+  <section class="form-gradient mb-5">
+  
+      <!--Form with header-->
+      <mdb-card>
+    
+        <!--Header-->
+        <div class="header peach-gradient">
+    
+          <div class="row d-flex justify-content-center">
+            <h3 class="white-text mb-0 py-5 font-weight-bold">HR Section</h3>
+          </div>
+    
+        </div>
+        <!--Header-->
+    
+        <mdb-card-body class="mx-4">
+            <p>Team NAme: {{message?.team}}</p>
+            <p>Date: {{message?.date}}</p>
+            <p>Subject: {{message?.Subject}}</p>
+            <p>TaskDetails: {{message?.TaskDetails}}</p>
+          <!--Grid row-->
+        </mdb-card-body>
+    
+      </mdb-card>
+      <!--/Form with header-->
+    
+    </section>
+    <!-- Section: form gradient -->
+    <!-- Section: form dark -->
+    
+    <!-- Section: form dark -->
+  </mdb-card-text>
+  </mdb-card-body>
+  <!--/.Card content-->
+  
+  </mdb-card>
+  <!--/.Card-->
+  </div>
+  </div>
+  </body>
+
+

@@ -31,10 +31,10 @@
       <!--Header-->
   
       <mdb-card-body class="mx-4">
-  
+  <form  [formGroup]="registerForm" (ngSubmit)="onSubmit()">
         <div class="md-form">
          
-          <input type="text" id="form104" class="form-control" mdbInput>
+          <input type="text" id="form104" class="form-control" mdbInput formControlName="team">
           <label for="form104">Your team</label>
         </div>
   
@@ -42,20 +42,20 @@
           
           <div class="md-form">
           
-            <input type="date" id="input" class="form-control" mdbInput>
+            <input type="date" id="input" class="form-control" mdbInput formControlName="date">
             <label for="input">Choose your date</label>
           </div>
         </div>
   
         <div class="md-form">
         
-          <input type="text" id="form106" class="form-control" mdbInput>
+          <input type="text" id="form106" class="form-control" mdbInput formControlName="Subject">
           <label for="form106">Subject</label>
         </div>
   
         <div class="md-form">
          
-          <textarea type="text" id="form107" class="md-textarea form-control" rows="5" mdbInput></textarea>
+          <textarea type="text" id="form107" class="md-textarea form-control" rows="5" mdbInput formControlName="TaskDetails"></textarea>
           <label for="form107">TaskDetails</label>
         </div>
   
@@ -66,12 +66,13 @@
           <!--Grid column-->
           <div class="col-md-12">
             <div class="text-center">
-              <button type="button" mdbBtn color="grey" rounded="true" class="z-depth-1a">Assign</button>
+              <button type="submit" mdbBtn color="grey" rounded="true" class="z-depth-1a">Assign</button>
             </div>
           </div>
           <!--Grid column-->
   
         </div>
+      </form >
         <!--Grid row-->
       </mdb-card-body>
   
